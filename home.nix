@@ -20,8 +20,11 @@
         dwt1-shell-color-scripts
         nix-search-cli
         slack
+        supabase-cli
+        basedpyright
+        yay
+        postgres-lsp
     ];
-    # ++ lib.filter lib.isDerivation (builtins.attrValues pkgs.astal);
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
@@ -53,15 +56,25 @@
             dart-sass
             adwaita-icon-theme
 
-            inputs.astal.packages.${pkgs.system}.astal3
-            inputs.astal.packages.${pkgs.system}.astal4
+            # astal.astal4
+            # astal.battery
+            # astal.bluetooth
+            # astal.io
+            # astal.gjs
+            # astal.tray
+            # astal.mpris
+            # astal.source
+            # astal.notifd
+            # astal.wireplumber
+            # astal.powerprofiles
+            # astal.network
+            # astal.hyprland
+            # astal.apps
+
             inputs.astal.packages.${pkgs.system}.battery
             inputs.astal.packages.${pkgs.system}.bluetooth
-            inputs.astal.packages.${pkgs.system}.io
-            # inputs.astal.packages.${pkgs.system}.gjs
             inputs.astal.packages.${pkgs.system}.tray
             inputs.astal.packages.${pkgs.system}.mpris
-            # inputs.astal.packages.${pkgs.system}.source
             inputs.astal.packages.${pkgs.system}.notifd
             inputs.astal.packages.${pkgs.system}.wireplumber
             inputs.astal.packages.${pkgs.system}.powerprofiles
